@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sai Prasad Vivah Sanstha Administrator Login</title>
+<style type="text/css">
+<!--
+body { background:url(images/login-bk.gif); margin:0px; font-family:Arial, Helvetica, sans-serif; margin-top:25px;}
+.lpmain { background:url(images/Login-Main-Bk.jpg) no-repeat;}
+.lpmain h1 {font-size:20px; color:#FFF; font-weight:normal; margin-top:0px; margin-bottom:5px;}
+.lpmain .label { color:#003399; padding-left:0px; line-height:20px; margin-top:10px; font-size:13px; font-weight:bold; }
+.lpmain .textfiled { padding-top:4px; padding-bottom:5px; width:190px; -webkit-border-radius:5px;-moz-border-radius:5px;}
+.lpmain a {font-size:12px; color:#003399;}
+.lpmain a:hover {font-size:12px; color:#ff0000;}
+.lpmain .poweredby { font-size:12px; }
+.lpmain .poweredby a{ color:#090; }
+.lpmain .poweredby a:hover{ color:#333333; }
+
+
+-->
+</style></head>
+
+<body>
+<form action="" method="post" name="loginForm" id="loginForm">
+<table align="center" width="910px" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="543" valign="top" class="lpmain"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="593" height="150">&nbsp;</td>
+        <td><span id="error"><?=$errormsg?></span></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td valign="top"><h1>Administrator login</h1>
+<span class="label" style="color:#FFFFFF;">Username</span> 
+
+            <div style="padding-bottom:10px;">
+            <input class="textfiled" type="text" name="userName" id="userName" >
+            </div>
+
+          <span class="label" style="color:#FFFFFF;">Password<br /></span>
+            <div style="padding-bottom:10px;">
+            <input class="textfiled" type="password" name="Password">
+            </div>
+
+<div style="padding-left:110px; padding-top:10px;">
+<input type="image" src="images/btn-signin.jpg" width="83" height="27" border="0" name="submit" id="submit" value="LOGIN">
+</div></td>
+      </tr>
+    </table>
+        
+    <div style="padding-top:110px; padding-left:577px;" class="poweredby"><br />
+<br />
+<br />
+Powerd by - <a href="http://www.pipaldesign.com">Pipal Design &amp; Web Solutions</a></div>
+    </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>
+<script language="javascript" type="text/javascript">
+	function checkLogin()
+		{
+			var uname=document.loginForm.userName.value;
+				if(uname=="")
+					{
+						alert("Please Enter Your User Name");
+						document.loginForm.userName.focus();
+						return false;
+					}
+			var pass=document.loginForm.Password.value;
+				if(pass=="")
+					{
+						alert("Please Enter Your Password");
+						document.loginForm.Password.focus();
+						return false;
+					}
+		}
+</script>

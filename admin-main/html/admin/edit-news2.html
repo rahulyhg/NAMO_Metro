@@ -1,0 +1,86 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/themes/ckeditor/js/libs/jquery-1.7.2.min.js"<\/script>');</script>
+<script src="ckeditor/ckeditor.js"></script>
+<script src="ckeditor/ckeditor_basic.js"></script>
+<script src="ckeditor/ckeditor_basic_source.js"></script>
+<script src="ckeditor/ckeditor_source.js"></script>
+<script src="ckeditor/config.js"></script>
+<script src="/apps/ckeditor/4.0.1/ckeditor.js?mh6qzm"></script>
+
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"ckeditor","theme_token":"yaGucul1cW_BF8vsQ46eHknbIhugNnr_9R0_XXC3ypo","js":{"themes\/ckeditor\/js\/jquery.cktooltip.js":1,"themes\/ckeditor\/js\/jquery.ckplaceholder.js":1,"themes\/ckeditor\/prettify\/prettify.js":1,"sites\/all\/modules\/cksource_repo\/includes\/cksource_repo.utils.js":1,"themes\/ckeditor\/js\/jquery.horizontalScroller.js":1,"themes\/ckeditor\/js\/jquery.simplemodal-1.4.2.js":1,"themes\/ckeditor\/js\/jquery.fancybox.pack.js":1,"themes\/ckeditor\/js\/jquery.flexslider-min.js":1,"themes\/ckeditor\/js\/libs\/pixastic.custom.js":1,"themes\/ckeditor\/js\/jquery.mousewheel.js":1,"themes\/ckeditor\/js\/jquery.jscrollpane.min.js":1,"themes\/ckeditor\/js\/jquery.liveFilter.js":1,"themes\/ckeditor\/js\/site.js":1,"sites\/all\/modules\/ckeditor_demo\/js\/demo.js":1,"\/apps\/ckeditor\/4.0.1\/samples\/assets\/uilanguages\/languages.js":1,"http:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.7.2\/jquery.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/cksource_repo\/includes\/jquery.form-2.86.js":1,"sites\/all\/modules\/comment_notify\/comment_notify.js":1,"sites\/all\/modules\/auto_upload\/auto_upload.js":1,"\/apps\/ckeditor\/4.0.1\/ckeditor.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/comment_notify\/comment_notify.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/ckeditor_demo\/css\/demo.css":1,"themes\/adaptivetheme\/adaptivetheme\/adaptivetheme\/adaptivetheme\/at_core\/css\/at.layout.css":1,"themes\/ckeditor\/css\/globals.css":1,"themes\/ckeditor\/css\/style.css":1,"themes\/ckeditor\/css\/jquery-ui-dialog.css":1,"themes\/ckeditor\/css\/jquery.fancybox.css":1,"themes\/ckeditor\/css\/flexslider.css":1,"themes\/ckeditor\/prettify\/prettify.css":1}},"ckfinderPath":"apps\/ckfinder\/2.3.1","demoPath":"\/sites\/all\/modules\/ckeditor_demo","ckeditorPath":"\/apps\/ckeditor\/4.0.1","cksource_repo":{"ajaxToken":"R4lCj0KR95xANQyUCqJy5-HR2ePe0eqeiGsVj9FwGhM","basket":"\/basket"}});</script>
+
+
+
+<form name="TxtFrom" id="TxtFrom" action="" method="post"  enctype="multipart/form-data">
+<div class="main right">
+        <table class="titlebar" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td align="left" valign="bottom"><h1>Edit News</h1></td>
+        <td class="btn"><!--<span><a href="index.html">Add</a></span><span><a href="#">Modify</a></span> <span><a href="#">Delete</a></span>--></td>
+        </tr>
+        </table>
+<div align="center" class="formarea">
+  <table width="100%" border="0" cellspacing="5" cellpadding="0">
+ 
+                       <tr>
+						<td width="16%" align="right"><strong> Date</strong></td>
+						<td width="84%"><input class="inputarea" type="text" name="date1" id="date1" style="width:200px;"   value="<?=$rowData['date']?>" /></td>
+	    </tr>
+         <tr>
+						<td align="right" valign="middle" style="vertical-align:top;"><p><strong>Description</strong></p>
+						  <p>&nbsp;</p>
+						  <p>&nbsp;</p>
+						  <p>&nbsp;</p></td>
+						<td><textarea name="editor1" id="editor1" class="inputarea" rows="" cols="" style="width:500px;"><?=$rowData['content']?></textarea></td>
+					  </tr>
+                      
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td><br />      <input type="image" src="images/btn-submit.gif" width="67" height="23" border="0" name="submit" id="submit" value="LOGIN"> </td>
+  </tr>
+  </table>
+
+</div>
+      </div>
+      </form>          <script type="text/javascript">
+			//<![CDATA[
+
+			// Replace the <textarea id="editor"> with an CKEditor
+			// instance, using the "bbcode" plugin, shaping some of the
+			// editor configuration to fit BBCode environment.
+		CKEDITOR.replace( 'editor1',
+	{
+		fullPage : true,
+		extraPlugins : 'docprops'
+	});
+
+			//]]>
+			</script> 
+            <script type="text/javascript">
+			//<![CDATA[
+
+			// Replace the <textarea id="editor"> with an CKEditor
+			// instance, using the "bbcode" plugin, shaping some of the
+			// editor configuration to fit BBCode environment.
+			CKEDITOR.replace( 'editor2',
+				{
+					extraPlugins : 'bbcode',
+					// Remove unused plugins.
+					removePlugins : 'bidi,button,dialogadvtab,div,filebrowser,flash,format,forms,horizontalrule,iframe,indent,justify,liststyle,pagebreak,showborders,stylescombo,table,tabletools,templates',
+					// Width and height are not supported in the BBCode format, so object resizing is disabled.
+					disableObjectResizing : true,
+					// Define font sizes in percent values.
+					fontSize_sizes : "30/30%;50/50%;100/100%;120/120%;150/150%;200/200%;300/300%",
+					toolbar :
+					[
+						['Source', '-','Undo','Redo'],						
+						['Link', 'Unlink'],						
+						['Bold', 'Italic','Underline'],
+						['TextColor'],
+						['NumberedList','BulletedList','-','Blockquote'],
+						['Maximize']
+					]
+			} );
+
+			//]]>
+			</script>        

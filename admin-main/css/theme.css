@@ -1,0 +1,96 @@
+body {background:#ffffff url(../images/body-bk.jpg);text-align:left; color:#333; font-family:Arial, Helvetica, sans-serif;}
+a { color:#1a76ae;}
+a:hover {color:#8bb712;}
+testarea:focus, select:focus, input:focus { outline:solid 1px #0C3 !important;}
+span{ color:#F00;}
+#page { }
+/*------- Header Classes Start -----*/
+.header { height:90px; background:url(../images/header-bk.jpg); }
+			/*------- Class for Top Navigation -----*/
+			.topnav-container {text-align:right; float:right;}
+			.welocme-name { float:right; padding-top:15px;}
+			.welocme-name .green{
+	color:#339900;
+	font-weight:bold;
+}
+			.welocme-name .black{ color:#000000; text-transform: capitalize;}
+			
+			.nav {font-size:12px;font-weight:bold;text-align:right; padding-top: 20px; padding-bottom:5px; margin-right:5px;}
+			.nav span {margin:0 0 0 5px;;}
+			.nav span a {padding:5px 9px;text-decoration:none; background:# ; -webkit-border-radius:5px;-moz-border-radius:5px; color:#333;}
+			.nav span.selected a,
+			.nav span.selected a:hover {background:#339900;color:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;}
+			.nav span a:hover {background:#339900;-webkit-border-radius:5px;-moz-border-radius:5px; color:#ffffff;}
+			.nav .vdivider {border-right: dashed 1px #666; padding-top:5px; padding-bottom:10px; margin-right:3px;}
+			/*------- Class for Top Navigation -----*/
+/*------- Header Classes End -----*/
+
+
+/*------- Banner Classes Start -----
+.banner { height:290px; background:#FFC; }
+------- Banner Classes End -----*/
+
+/*------- Banner Classes Start -----*/
+.topnavbar { height:41px; background:#329832 url(../images/topnavbar-bk.jpg) repeat-y right top; }
+.topnavbar .cms { background:url(../images/Content-Management-System.jpg) no-repeat; width:237px; height:41px; }
+
+/*------- Banner Classes End -----*/
+
+/*------- Main Container Classes Start -----*/
+#main-container { background:#ffffff; border:0px #F00 solid; padding-right:18px;}
+.left-nav { background:#ffffff; width:190px; float:left;}
+.main { background:#ffffff; margin:0px 0px 20px 0px; padding:0px; width:84%; float:right;padding-left:30px;}
+.main .titlebar{ border-bottom: 1px solid #d4ecb0; padding-bottom:5px;}
+.main h1{ color:#339933; font-weight:bold; font-size:20px; margin-top:15px; margin-bottom:0px;}
+.main h2{ color:#333333; font-weight:bold; font-size:18px; margin-top:15px; margin-bottom:0px;}
+.main ul { color:#333333; list-style-type: none; list-style-position: outside; margin:10px 0px 0px 12px;  padding: 0px 0px 0px 15px; list-style-image:url(../images/main-bullet.jpg);}
+.main li { margin: 0px 0px 0px 0px; padding: 0px 0px 10px 0px; font-size:12px; text-align:left; color:#666;} 
+.right-nav { background:#FC3;}
+/*------- Main Container Classes End -----*/
+
+
+/*------- Footer Classes Start -----*/
+.footer { background:#24211d; padding-top:15px; padding-bottom:10px;}
+.footer .powered-by {padding-left:11px;}
+.footer .footerlinks { color:#757575; float:right; margin-right:20px; text-align:right;}
+.footer .footerlinks a{ color:#a3a3a3; text-decoration:none; padding-left:3px; padding-right:3px;}
+.footer .footerlinks a:hover{ color:#ffffff; text-decoration:underline;}
+.footer .pipal a{ color:#339933; text-decoration:none; padding-left:3px; padding-right:3px;}
+.footer .pipal a:hover{ color:#99cc33; text-decoration:underline;}
+
+/*------- Footer Classes End -----*/
+.initial2{font-weight:bold; font-size:13px; font-family:Arial, Helvetica, sans-serif; background-color:#feca2f; -webkit-border-radius:5px; -moz-border-radius:5px; border:1px solid #F90; padding-top:3px; padding-bottom:3px;}
+.initial2 a{ color:#FFF;}
+.initial2 a:hover{ color:#FFF;}
+
+/*------- Page buttons Start -----*/
+.btn {font-size:12px;font-weight:bold;text-align:right; padding-top:12px;}
+.btn span {margin:0 0 0 5px;}
+.btn span a {padding:5px 9px;text-decoration:none; background:#fec725; border:1px solid #878d59;-webkit-border-radius:5px;-moz-border-radius:5px; color:#000;}
+.btn span.selected a,
+.btn span.selected a:hover {background:#669933;color:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;}
+.btn span a:hover {background:#669933;-webkit-border-radius:5px;-moz-border-radius:5px; color:#ffffff;}
+/*------- Page buttons ends -----*/
+
+/*------- Small buttons Start -----*/
+.smlbtn {font-size:9px;font-weight:bold;text-align:left; padding-top:12px;}
+.smlbtn span {margin:0 0 0 5px;}
+.smlbtn span a { background:#99cc33; padding:2px 5px;text-decoration:none;border:1px solid #878d59;-webkit-border-radius:5px;-moz-border-radius:5px; color:#000;}
+.smlbtn span.selected a,
+.smlbtn span.selected a:hover {background:#ff6600;color:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;}
+.smlbtn span a:hover {background:#669933;-webkit-border-radius:5px;-moz-border-radius:5px; color:#ffffff;}
+/*------- Page buttons ends -----*/
+
+/*------- Class for Table Start-----*/
+.table-box { border:1px solid #99cc33; margin-top:15px; margin-bottom:10px; background-color:#d5eea2;}
+.table-box .table-title { background:#99cc33; color:#FFF; font-weight:bold; font-size:12px;}
+.table-box td { padding:5px 5px 5px 5px; background:#FFF;}
+.mail-alert {color:#FF0000; font-weight:bold;}
+
+/*------- Class for Table End-----*/
+
+.formarea { background-color:#FFC; margin:20px 67px 20px 20px; border:1px #FC9 solid; padding:20px;}
+.formarea .inputarea { background:#ffffff url(../images/textfiled-bk.jpg) repeat-x; border:1px #bdbcbd solid; font-family:Arial, Helvetica, sans-serif; font-size:12px; padding-top:4px; padding-bottom:4px; -webkit-border-radius:5px;-moz-border-radius:5px; color:#333333; padding-left:3px; padding-right:3px; }
+
+
+/***************************/

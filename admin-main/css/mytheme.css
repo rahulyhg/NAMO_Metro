@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*amol*/
+.menu-bg{background-color:#9e1800; padding:10px 10px;-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px; /* future proofing */
+-khtml-border-radius: 10px;}
+.my-account{}
+.my-account a{color:#666; font-size:14px; font-weight:bold; text-decoration:none}
+.my-account a:hover{color:#990000;}
+.sub-padding{width:755px; margin:10px auto 0px auto; padding:10px 10px;}
+.sub-padding-2{width:725px; margin:10px auto 30px auto; padding:10px 10px;}
+.sub-padding-2 ol{padding:0px; margin-left:20px; list-style:decimal}
+.sub-padding-2 ol li{padding:2px 0px;}
+.sub-padding h2{font-size:18px;}
+.stories-label{width:150px; float:left; text-align:left; font-weight:bold}
+.red-txt{font-size:14px; color:#ae1800}
+.change-password{width:320px; margin:0px auto;} 
+.change-password a{text-decoration:none;}
+.change-password a:hover{}
+.password-textbox{width:180px; background-color:#333!important;}
+.password-label{width:150px; float:left; margin-top:8px; text-align:left; }
+.red-button{padding:5px 25px 5px 25px; color:#ccc; background-color:#9f1800!important; text-decoration:none; border:solid 1px #d7021d;-moz-border-radius:10px;
+-webkit-border-radius:10px;
+border-radius:10px; /* future proofing */
+-khtml-border-radius:10px;}
+.red-button:hover{background-color:#b21d00!important; color:#fff; text-decoration:none;}
+.back{background:url(../images/back-arrow.png) no-repeat; background-position:2px 5px; padding:5px 20px;}
+.mail-links{color:#ae1800;}
+.mail-links:hover{color:#cc9a37; text-decoration:none;}
+
+.map{border:solid 1px #d7d7d7}
+.contact-label{width:115px;}

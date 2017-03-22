@@ -1,0 +1,30 @@
+<div class="main right">
+        <table class="titlebar" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td align="left" valign="bottom"><h1>Add Status </h1></td>
+        <td class="btn"><!--<span><a href="index.html">Add</a></span><span><a href="#">Modify</a></span> <span><a href="#">Delete</a></span>--></td>
+        </tr>
+        </table>
+<div align="center"  class="formarea">
+<form name="form1" method="post" action="">
+
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+  	<td>User Name</td>
+    <td width="88%" class="normalText">
+    <select name="TxtUser" id="TxtUser">
+    	<?=$DataUser?>   
+    </select></td>
+  </tr>
+  <tr>
+  	<td valign="top">Status</td>
+    <td><?=$oFCKeditor->Create() ;?></td>
+  </tr>
+  <tr>
+  	<td>&nbsp;</td>
+    <td><input type="image" src="images/btn-submit.gif" width="67" height="23" border="0" name="submit" id="submit" value="LOGIN"></td>
+  </tr>
+</table>
+</form>
+</div>
+      </div>

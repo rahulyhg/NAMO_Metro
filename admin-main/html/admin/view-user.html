@@ -1,0 +1,46 @@
+<div class="main right">
+        <table class="titlebar" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td align="left" valign="bottom"><h1>Manage Customer </h1></td> 
+        </tr>
+        </table>        
+<div class="table-box">
+
+  <table width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr >
+      <td width="2%" align="center" class="table-title">#</td>
+      <td width="21%" class="table-title">Contact Person </td>
+       <td width="26%" class="table-title"> E-mail </td>
+      <td width="17%" class="table-title"> Date Added </td>
+      <td width="16%" align="center" class="table-title"> Action </td>
+    </tr>
+    <?
+    if($_POST)
+    	{
+        	echo $dataLogo12;
+        }
+     else
+     	{
+        	echo $dataLogo;
+        }
+    ?>
+    
+  </table>
+</div>
+<div align="right"><?=$pagination;?></div>
+      </div>
+      <script language="javascript" type="text/javascript">
+function ask_ques()
+{
+	var t=confirm("Are you sure you want to delete");
+	if (t)
+		{
+			return true;
+		}
+	else
+		{
+			return false;
+		}
+}
+
+</script>

@@ -1,0 +1,74 @@
+<form name="TxtFrom" id="TxtFrom" action="" method="post"  enctype="multipart/form-data">
+<div class="main right">
+        <table class="titlebar" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td align="left" valign="bottom"><h1>Add New Product</h1></td>
+        <td class="btn"><!--<span><a href="index.html">Add</a></span><span><a href="#">Modify</a></span> <span><a href="#">Delete</a></span>--></td>
+        </tr>
+        </table>
+<div align="center" class="formarea">
+  <table width="100%" border="0" cellspacing="5" cellpadding="0">
+  					   <tr>
+						<td width="21%" align="right"><strong>Product Name</strong></td>
+						<td width="79%"><input class="inputarea" type="text" name="TxtName" id="TxtName" value="" style="width:300px;" /></td>
+	    </tr>
+        <tr>
+						<td width="21%" align="right"><strong>Product Code</strong></td>
+						<td width="79%"><input class="inputarea" type="text" name="TxtCode" id="TxtCode" value="" style="width:300px;" /></td>
+	    </tr>         
+                      <tr>
+						<td width="21%" align="right"><strong>Actual Price</strong></td>
+						<td width="79%"><input class="inputarea" type="text" name="TxtActPrice" id="TxtActPrice" value="" style="width:300px;" /></td>
+	    </tr>
+        <tr>
+						<td width="21%" align="right"><strong>Sale Price</strong></td>
+						<td width="79%"><input class="inputarea" type="text" name="TxtSalPrice" id="TxtSalPrice" value="" style="width:300px;" /></td>
+	    </tr>
+		 <tr>
+						<td width="21%" align="right"><strong>Quantity</strong></td>
+						<td width="79%"><input class="inputarea" type="text" name="TxtQty" id="TxtQty" value="" style="width:300px;" /></td>
+	    </tr>
+         <tr>
+						<td width="21%" align="right"><strong>Fabric</strong></td>
+						<td width="79%"><input class="inputarea" type="text" name="TxtFabric" id="TxtFabric" value="" style="width:300px;" /></td>
+	    </tr>
+         <tr>
+						<td width="21%" align="right"><strong>Color</strong></td>
+						<td width="79%"><input class="inputarea" type="text" name="TxtColor" id="TxtColor" value="" style="width:300px;" /></td>
+	    </tr>
+         <tr>
+						<td width="21%" align="right"><strong>Occasion</strong></td>
+						<td width="79%"><input class="inputarea" type="text" name="TxtOccasion" id="TxtOccasion" value="" style="width:300px;" /></td>
+	    </tr>
+         <tr>
+						<td width="21%" align="right"><strong>Style</strong></td>
+						<td width="79%"><input class="inputarea" type="text" name="TxtStyle" id="TxtStyle" value="" style="width:300px;" /></td>
+	    </tr>
+        <tr>
+						<td width="21%" align="right"><strong>Weight</strong></td>
+						<td width="79%"><input class="inputarea" type="text" name="TxtWeight" id="TxtWeight" value="" style="width:300px;" /></td>
+	    </tr>
+                      <tr>
+						<td align="right" valign="top"><strong>Big Image</strong></td>
+						<td><input class="inputarea" type="file" name="image_upload_big" id="image_upload_big" /> 
+						(Size 196px <strong>X</strong> 311px)</td>
+					  </tr>  
+					  <tr>
+						<td align="right" valign="middle"><p><strong>Description</strong></p>
+						  <p>&nbsp;</p>
+						  <p>&nbsp;</p>
+						  <p>&nbsp;</p></td>
+						<td><?=$oFCKeditor->Create() ;?></td>
+					  </tr>
+					<tr>
+						<td colspan="2">&nbsp;</td>
+					</tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td><input type="image" src="images/btn-submit.gif" width="67" height="23" border="0" name="submit" id="submit" value="LOGIN"> </td>
+  </tr>
+  </table>
+
+</div>
+      </div>
+      </form>

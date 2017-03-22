@@ -1,0 +1,37 @@
+<div class="main right">
+        <table class="titlebar" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td align="left" valign="bottom"><h1>All Melawa Images </h1></td>
+        <td class="btn"><span style="padding-right:20px;"><?=$msg?></span><span><a href="insert-melawa-img.php">Add New Images</a></span></td>
+        </tr>
+        </table>
+<div class="table-box">
+  <table width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr >
+      <td width="11%" align="center" class="table-title">#</td>
+      <td width="19%" class="table-title"> Name </td>
+      <td width="30%" class="table-title"> Image </td>
+      <td width="10%" class="table-title"> Date </td>
+      <td width="21%" align="center" class="table-title"> Action </td>
+    </tr>
+    <?=$dataLogo;?>
+    
+  </table>
+</div>
+<div align="right"><?=$pagination;?></div>
+      </div>
+      <script language="javascript" type="text/javascript">
+function ask_ques()
+{
+	var t=confirm("Are you sure you want to delete");
+	if (t)
+		{
+			return true;
+		}
+	else
+		{
+			return false;
+		}
+}
+
+</script>

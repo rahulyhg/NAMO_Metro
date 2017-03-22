@@ -1,0 +1,38 @@
+<div class="main right">
+        <table class="titlebar" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td align="left" valign="bottom"><h1>Show Presentation </h1></td>
+        </tr>
+        </table>
+<div class="table-box">
+  <table width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr >
+      <td width="4%" align="center" class="">
+      
+      <!-- Use the following <object> tag to embed the Flash presentation into HTML document -->
+<object id="presentation" width="720" height="576" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="../presentation/<?=$rowPresentation['video_url']?>" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#ffffff" />
+<param name="allowFullScreen" value="true" />
+<embed src="../presentation/<?=$rowPresentation['video_url']?>" quality="high" bgcolor="#ffffff" width="720" height="576" name="presentation" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" allowFullScreen="true" />
+</object>
+
+<!-- Use the following <object> tag to embed the Flash presentation into XHTML document --> 
+<!--
+<object id="presentation" width="720" height="576" type="application/x-shockwave-flash" data="Slide 1.swf"> 
+<param name="allowScriptAccess" value="sameDomain" /> 
+<param name="movie" value="Slide 1.swf" /> 
+<param name="quality" value="high" /> 
+<param name="bgcolor" value="#ffffff" /> 
+<param name="allowFullScreen" value="true" /> 
+</object>
+-->
+      
+      </td>
+    </tr>
+  </table>
+</div>
+ </div>
+<script type="text/javascript" src="fixprompt.js"/>

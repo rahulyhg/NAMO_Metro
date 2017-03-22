@@ -1,0 +1,30 @@
+<form name="TxtFrom" id="TxtFrom" action="" method="post">
+<div class="main right">
+        <table class="titlebar" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td align="left" valign="bottom"><h1>Upload Data</h1></td>
+        <td class="btn"><!--<span><a href="index.html">Add</a></span><span><a href="#">Modify</a></span> <span><a href="#">Delete</a></span>--></td>
+        </tr>
+        </table>
+<div align="center" class="formarea">
+  <table width="100%" border="0" cellspacing="5" cellpadding="0">
+  <tr>
+    <td align="right" valign="middle"><p><strong>Question</strong></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p></td>
+    <td><textarea style="height:150px;" class="inputarea" name="TxtDescrption" id="TxtDescrption" cols="45" rows="5"><?=$rowFaq['que_name']?></textarea></td>
+  </tr>
+      <tr>
+    <td align="right"><strong>Question Ordering</strong></td>
+    <td><input class="inputarea" type="text" name="TxtOrder" id="TxtOrder" value="<?=$rowFaq['que_order']?>" /></td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td><br />      <input type="image" src="images/btn-submit.gif" width="67" height="23" border="0" name="submit" id="submit" value="LOGIN"> </td>
+  </tr>
+  </table>
+
+</div>
+      </div>
+      </form>

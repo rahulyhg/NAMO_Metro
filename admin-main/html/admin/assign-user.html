@@ -1,0 +1,49 @@
+<div class="main right">
+        <table class="titlebar" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td align="left" valign="bottom"><h1>Assign Presentation To User</h1></td>
+        <td class="btn"><!--<span><a href="index.html">Add</a></span><span><a href="#">Modify</a></span> <span><a href="#">Delete</a></span>--></td>
+        </tr>
+        </table>
+<div align="center" class="formarea">
+<form name="frm" id="frm" method="post" action=""  onSubmit="return check()">
+  <table width="100%" border="0" cellspacing="5" cellpadding="0">
+  <input type="hidden" id="user-id" name="user-id" value="<?=$_REQUEST['lid']?>" />
+  <tr>
+    <td width="21%" align="right"><strong>Company Name</strong></td>
+    <td width="79%"><?=$rowUser['company']?></td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><strong>Reference Person</strong></td>
+    <td><?=$rowUser['refname']?></td>
+  </tr>
+  <tr>
+    <td align="right"><strong>Presentation</strong></td>
+    <td>
+      <select name="user_type" id="user_type" class="inputarea">
+        <option value="1">Please Select One Presentation</option>
+        <?=$dataPresentation?>
+      </select>
+</td>
+  </tr>
+  
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td><br />      <input type="image" src="images/btn-submit.gif" width="67" height="23" border="0" name="submit" id="submit" value="LOGIN"> </td>
+  </tr>
+  </table>
+ </form>
+</div>
+      </div> 
+<script type="text/javascript" language="javascript">
+function check()
+	{
+		var user = document.frm.user_type.value;
+		if(user == 1)
+			{
+				alert("Please Select One Presentation");
+				document.frm.user_type.focus();
+				return false;
+			}		
+	}		
+</script>       

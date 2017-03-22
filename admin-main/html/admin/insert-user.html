@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="css/validationEngine.jquery.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+		<link rel="stylesheet" href="css/template.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+		<script src="js/jquery.validationEngine-en.js" type="text/javascript"></script>
+		<script src="js/jquery.validationEngine.js" type="text/javascript"></script>
+		
+		<!-- AJAX SUCCESS TEST FONCTION	
+			<script>function callSuccessFunction(){alert("success executed")}
+					function callFailFunction(){alert("fail executed")}
+			</script>
+		-->
+		
+		<script>	
+		$(document).ready(function() {
+			// SUCCESS AJAX CALL, replace "success: false," by:     success : function() { callSuccessFunction() }, 
+			
+			$("#formID").validationEngine()
+			
+			
+			//$.validationEngine.loadValidation("#date")
+			//alert($("#formID").validationEngine({returnIsValid:true}))
+			//$.validationEngine.buildPrompt("#date","This is an example","error")	 		 // Exterior prompt build example								 // input prompt close example
+			//$.validationEngine.closePrompt(".formError",true) 							// CLOSE ALL OPEN PROMPTS
+		});
+		
+		// JUST AN EXAMPLE OF VALIDATIN CUSTOM FUNCTIONS : funcCall[validate2fields]
+		function validate2fields(){
+			if($("#firstname").val() =="" || $("#lastname").val() == ""){
+				return true;
+			}else{
+				return false;
+			}
+		}
+	</script>
+<div class="main right">
+        <table class="titlebar" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td align="left" valign="bottom"><h1>Add New User </h1></td>
+        <td class="btn"><!--<span><a href="index.html">Add</a></span><span><a href="#">Modify</a></span> <span><a href="#">Delete</a></span>--></td>
+        </tr>
+        </table> 
+<div align="center"  class="formarea">
+<form name="formID" id="formID" method="post" action="" enctype="multipart/form-data">
+<table width="100%" border="0" align="center" cellpadding="2" cellspacing="2"  >
+  <tr >
+    <td height="27"   style="padding-left:12px;">&nbsp;</td>
+    <td height="27"   style="padding-left:12px;">&nbsp;</td>
+  </tr>
+  
+  <tr >
+    <td width="33%" height="27" align="right"   style="padding-left:12px;" class="normalText1"><strong>Refrence Person Name</strong></td>
+    <td width="67%"   style="padding-left:12px;" >    
+    <input class="inputarea  validate[required]" type="text" name="TxtRefName" id="TxtRefName" /></td>
+  </tr>
+ 
+  <tr >
+    <td width="33%" height="27" align="right"   style="padding-left:12px;" class="normalText1"><strong>Password</strong></td>
+    <td width="67%"   style="padding-left:12px;" >    
+    <input class="inputarea  validate[required]" type="text" name="TxtPassword" id="TxtPassword" /></td>
+  </tr>
+  <tr >
+    <td width="33%" height="27" align="right"   style="padding-left:12px;" class="normalText1"><strong>E-mail</strong></td>
+    <td width="67%"   style="padding-left:12px;" >    
+    <input class="inputarea validate[required,custom[email]]" type="text" name="TxtEmail" id="TxtEmail" /></td>
+  </tr>
+  <tr >
+    <td width="33%" height="27" align="right"   style="padding-left:12px;" class="normalText1"><strong>Contact Number</strong></td>
+    <td width="67%"   style="padding-left:12px;" >    
+    <input class="inputarea  validate[required,custom[telephone]]" type="text" name="TxtContNo" id="TxtContNo" /></td>
+  </tr>
+  <tr >
+    <td height="27"   style="padding-left:12px;">&nbsp;</td>
+    <td height="27"   style="padding-left:12px;" ><input type="image" src="images/btn-submit.gif" width="67" height="23" border="0" name="submit" id="submit" value="LOGIN"></td>
+  </tr>
+  <tr >
+    <td height="27"   style="padding-left:12px;">&nbsp;</td>
+    <td height="27"   style="padding-left:12px;">&nbsp;</td>
+  </tr>
+</table>
+ 
+</form>
+</div>
+      </div>

@@ -1,0 +1,419 @@
+<form name="TxtFrom" id="TxtFrom" action="" method="post">
+<div class="main right">
+        <table class="titlebar" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td align="left" valign="bottom"><h1>Insert New User</h1></td>
+        <td class="btn"><!--<span><a href="index.html">Add</a></span><span><a href="#">Modify</a></span> <span><a href="#">Delete</a></span>--></td>
+        </tr>
+        </table>
+<div align="center" class="formarea">
+
+<form id="Frmloginpage" name="Frmloginpage" method="post" action="" enctype="multipart/form-data">      
+     <div class="my-account-details">      
+        <div class="form-body-01">
+        <h3>Basic Details <a href="edit-basic-detail.php" class="right" >Edit</a></h3>
+        <ul>
+        <li><div class="l1"> First Name</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"> <?=$rowRegistration['registration_fname']?></div></li>
+        <li><div class="l1"> Mother Tongue</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_mother_tongue']?></div></li>
+        <li><div class="l1"> Caste</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_caste']?></div></li>
+        <li><div class="l1"> Marital Status</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_maritial_status']?> </div></li>
+        
+         <? 
+        if($rowRegistration['registration_maritial_status'] != "Unmarried")
+        	{        
+        ?>
+         <li><div class="l1"> No Of Children</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_children']?> </div></li>
+         <? 
+         }
+         ?>
+         
+        <li><div class="l1"> Sub Group</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_subgroup']?> </div></li>
+        
+        
+        <li><div class="l1"> About myself</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_about_myself']?></div></li>
+        
+        </ul>
+        
+        <ul>
+        <li><div class="l1">Last Name</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_lname']?></div></li>
+        <li><div class="l1"> Religion</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_religion']?></div></li>
+        <li><div class="l1"> Subcaste</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2">
+        <?=$rowRegistration['registration_sub_caste']?>
+        </div></li>
+        
+        <li><div class="l1"> Profile Created By</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_profile_createdby']?></div></li>
+        
+        <? 
+        if($rowRegistration['registration_maritial_status'] != "Unmarried")
+        	{        
+        ?>        
+        <li><div class="l1"> Children Living Status</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_childrenstatus']?></div></li>
+        <?
+        }
+        ?>
+        
+        
+        <li><div class="l1"> Spoken Language</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_spoken_language']?> </div></li>
+         
+        <li><div class="l1"> Age</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_age']?> </div></li>
+        </ul>
+        <div class="clear"></div>
+        </div>
+      
+      
+      <div class="form-body-01">
+      <h3>Physical Status &amp; Lifestyle  <a href="edit-physical-status.php"  class="right">Edit</a></h3>
+        <ul>
+        <li><div class="l1"> Height</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"> <?=$rowRegistration['registration_height']?></div></li>
+        <li><div class="l1"> Bloodgroup</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_blood_group']?></div></li>
+        <li><div class="l1"> Body Type</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_body_type']?> </div></li>
+         <li><div class="l1"> Physical Status</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"> <?=$rowRegistration['registration_physicalstatus']?></div></li>
+        <!--<li><div class="l1"> Marital Status</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"> </div></li>
+        <li><div class="l1"> Children Living Status</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2">Living with me</div></li>
+        <li><div class="l1"> About myself</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2">Testing</div></li>-->
+       
+</ul>
+
+        <ul>
+        <li><div class="l1">Weight</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_weight']?> kg</div></li>
+        <li><div class="l1"> Complexion</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_complexion']?></div></li>
+                <li><div class="l1"> Spectacles </div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_spectacles']?> </div></li>
+
+<li><div class="l1"> Diet </div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_diet']?> </div></li>
+        
+       
+</ul>
+    <div class="clear"></div>
+    </div>
+    
+    
+    <div class="form-body-01">
+      <h3>Astro Details <a href="edit-astro-detail.php"  class="right">Edit</a></h3>
+        <ul>
+        <li><div class="l1"> Birth time</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"> <?=$rowRegistration['registration_birth_time']?></div></li>
+        <li><div class="l1"> Birthplace</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+        <div class="l2"><?=$rowRegistration['registration_birth_place']?></div></li>
+        <li><div class="l1"> Rashi</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+        <div class="l2"><?=$rowRegistration['registration_rashi']?></div></li>
+        <li><div class="l1"> Charan</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2">
+        <?=$rowRegistration['registration_charan']?> </div></li>
+        <li>
+          <div class="l1"> Nadi</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowRegistration['registration_nadi']?></div></li>
+        <li><div class="l1"> Horoscope match required?</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+        <div class="l2"><?=$rowRegistration['registration_horoscope']?></div></li>
+       
+</ul>
+
+        <ul>
+        <li><div class="l1">Birth Date</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_birth_date']?></div></li>
+        <li><div class="l1"> Country of birth</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+        <div class="l2"><?=$rowRegistration['registration_country_birth']?></div></li>
+        <li><div class="l1"> Nakshatra</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_nakshatra']?> </div></li>
+        <li>
+          <div class="l1"> Gana</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_gana']?></div></li>
+        <li>
+          <div class="l1"> Are you Manglik ?</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_manglik']?></div></li>
+  
+       
+</ul>
+    <div class="clear"></div>
+    </div>
+      
+    <div class="form-body-01">
+      <h3>Contact Details <a href="edit-contact-details.php"  class="right">Edit</a></h3>
+        <ul>
+        <li><div class="l1"> Contact Address</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"> <?=$rowRegistration['registration_contact_address']?></div></li>
+        <li>
+          <div class="l1"> State</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowRegistration['registration_state']?></div></li>
+        
+        <li>
+          <div class="l1"> Mobile - 1</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_mobile1']?></div></li>
+       
+          <li>
+          <div class="l1"> Mobile - 2</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_mobile2']?></div></li>
+
+
+ <li>
+          <div class="l1"> Email ID</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowRegistration['registration_email']?></div></li>
+       
+</ul>
+
+        <ul>
+        <li>
+          <div class="l1">City</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowRegistration['registration_city']?></div></li>
+        <li>
+          <div class="l1"> Country</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowRegistration['registration_country']?></div></li>
+        <li>
+          <div class="l1"> STD</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowRegistration['registration_std']?></div></li>
+        <li>
+          <div class="l1"> Telephone</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowRegistration['registration_telephone']?></div></li>
+        
+  
+       
+</ul>
+    <div class="clear"></div>
+    </div>
+    
+    <div class="form-body-01">
+      <h3>Career Details <a href="edit-career-details.php" class="right">Edit</a></h3>
+        <ul>
+        <li><div class="l1"> Highest Qualification</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"> <?=$rowRegistration['registration_highest_qualification']?></div></li>
+        <li>
+          <div class="l1"> Education in Detail</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_education_detail']?></div></li>
+        <li>
+          <div class="l1"> Occupation in Detail</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_occupation_detail']?></div></li>
+          
+          <li>
+          <div class="l1"> Education Field</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_education_field']?></div></li>
+          
+          <li>
+          <div class="l1"> Employed in </div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_employedin']?></div></li>
+       
+</ul>
+
+        <ul>
+        <li>
+          <div class="l1">Education Level</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_education_level']?></div></li>
+        <li>
+          <div class="l1"> Occupation</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_occupation']?></div></li>
+        <li>
+          <div class="l1"> Monthly Income</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"> <?=$rowRegistration['registration_monthly_income']?></div></li>
+          
+           <li>
+          <div class="l1"> Prefer working after marriage</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"> <?=$rowRegistration['registration_working_marriage']?></div></li>
+  
+       
+</ul>
+    <div class="clear"></div>
+    </div>  
+    
+    <div class="form-body-01 right">
+      <h3>Family Details <a href="edit-family-details.php" class="right">Edit</a></h3>
+        <ul>
+        <li>
+          <div class="l1"> Father's Name</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"> <?=$rowRegistration['registration_fathername']?></div></li>
+        <li>
+          <div class="l1"> Mother's Name</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_mothername']?></div></li>
+        <li>
+          <div class="l1"> Brothers Married</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowRegistration['registration_brothermarried']?></div></li>
+        <li>
+          <div class="l1"> Brothers Unmarried</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowRegistration['registration_brotherunmarried']?> </div></li>
+        <li>
+          <div class="l1"> Living Status</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_livingstatus']?></div></li>
+          
+           <li>
+          <div class="l1"> Family Type</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_familytype']?></div></li>
+          
+           <li>
+          <div class="l1">About my Family</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_myfamily']?></div></li>
+       
+</ul>
+
+        <ul>
+        <li>
+          <div class="l1">Father's status</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_fatherstatus']?></div></li>
+        <li>
+          <div class="l1"> Mother's Status </div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_motherstatus']?></div></li>
+        <li>
+          <div class="l1"> Sisters Married</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_sistermarried']?>
+        </div></li>
+        <li>
+          <div class="l1"> Sisters Unmarried :</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_sisterunmarried']?> </div></li>
+          
+          <li>
+          <div class="l1"> Family Status :</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowRegistration['registration_familystatus']?> </div></li>
+          <li>
+          <div class="l1"> Native Place :</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2">
+          village - <?=$rowRegistration['registration_nativevillage']?><br />
+
+          taluka - <?=$rowRegistration['registration_nativetaluka']?><br />
+
+          district - <?=$rowRegistration['registration_nativedistrict']?><br />
+
+          state - <?=$rowRegistration['registration_nativestate']?> </div></li>
+  
+       
+</ul>
+    <div class="clear"></div>
+    </div>
+      <div class="form-body-01">
+      <h3>Partner Preference <a href="edit-partner-pef.php"  class="right">Edit</a></h3>
+        <ul>
+        <li>
+          <div class="l1"> Age</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"> Between <?=$rowPartnerData['partner_agefrom']?> yrs - <?=$rowPartnerData['partner_ageto']?> yrs</div></li>
+        <li>
+          <div class="l1"> Height</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2">Between <?=$rowPartnerData['partner_heightfrom']?> - <?=$rowPartnerData['partner_heightto']?></div></li>
+          <li>
+          <div class="l1"> Marital Status</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_maritalstatus']?></div></li>
+        <li>
+          <div class="l1"> Caste</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_caste']?></div></li>
+          <li>
+          <div class="l1"> Diet</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_diet']?></div></li>
+          
+           <li>
+          <div class="l1"> Complexion </div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_complexion']?></div></li>
+          
+          <li>
+          <div class="l1"> Bodytype </div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_bodytype']?></div></li>
+          
+          <li>
+          <div class="l1"> Smoke</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_smoke']?></div></li>
+          	<li>
+          <div class="l1"> Sub Group</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_subgroup']?></div></li>
+           <li>
+          <div class="l1"> State</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_state']?></div></li>
+          <li>
+          <div class="l1"> About My Partner</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowPartnerData['partner_aboutpartner']?></div></li>
+
+      
+</ul>
+
+        <ul>
+        
+        <li>
+          <div class="l1"> Religion</div><div class="left" style="font-weight:bold; margin:0px 3px;">:</div><div class="l2"><?=$rowPartnerData['partner_religion']?></div></li>
+        <li>
+          <div class="l1"> Are you ready for intercaste marriage?</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_intercaste']?>
+        </div></li>
+        <li>
+          <div class="l1"> Manglik Required ?</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_manglik']?> </div></li>
+          <li>
+          <div class="l1"> Occupation</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_occupation']?></div></li>
+        <li>
+          <div class="l1"> Monthly Income</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_monthlyincome']?></div></li>
+           <li>
+          <div class="l1"> Education Level </div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_educationlevel']?></div></li>
+          <li>
+          <div class="l1"> Employed in </div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_employedlevel']?></div></li>
+          <li>
+           <li>
+          <div class="l1"> Drink</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_drink']?></div></li>
+	<li>
+          <div class="l1"> City</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_city']?></div></li>
+           
+           <li>
+          <div class="l1"> Country</div>
+          <div class="left" style="font-weight:bold; margin:0px 3px;">:</div>
+          <div class="l2"><?=$rowPartnerData['partner_country']?></div></li>
+         
+</ul>
+    <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    </div>
+      <div class="clear"></div>
+        </div>        
+        
+        <div class="clear"></div>   
+        </di
+</form>
+</div>
+      </div>
+        
+<script type="text/javascript" language="javascript">
+	function enableTextbox() {
+if (document.getElementById("maritalstatus").value == "Unmarried") {
+document.getElementById("TxtChildren").disabled = true;
+document.getElementById("TxtChildLivstatus").disabled = true;
+}
+else {
+document.getElementById("TxtChildren").disabled = false;
+document.getElementById("TxtChildLivstatus").disabled = false;
+}
+}
+</script>
+        
+<script type="text/javascript" language="javascript">
+function AjaxFunction(email)
+{
+var httpxml;
+try
+{
+// Firefox, Opera 8.0+, Safari
+httpxml=new XMLHttpRequest();
+}
+catch (e)
+{
+// Internet Explorer
+try
+{
+httpxml=new ActiveXObject("Msxml2.XMLHTTP");
+}
+catch (e)
+{
+try
+{
+httpxml=new ActiveXObject("Microsoft.XMLHTTP");
+}
+catch (e)
+{
+alert("Your browser does not support AJAX!");
+return false;
+}
+}
+}
+function stateck() 
+{
+if(httpxml.readyState==4)
+{
+document.getElementById("msg").innerHTML=httpxml.responseText;
+
+}
+}
+var url="email-ajax.php";
+url=url+"?email="+email;
+url=url+"&sid="+Math.random();
+httpxml.onreadystatechange=stateck;
+httpxml.open("GET",url,true);
+httpxml.send(null);
+}
+</script> 

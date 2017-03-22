@@ -1,0 +1,127 @@
+ 
+  <script>
+    $(document).ready(function () {
+		$('.newdropd').change(function() {
+			$('.allqual').hide();
+			var newsel = $(this).val();
+			if(newsel == 'no_data'){
+				$('.allqual').show();
+				} else{
+				$('.'+newsel).show();
+			}
+		});
+	});
+  </script>
+<style>
+.paginate {
+font-family:Arial, Helvetica, sans-serif;
+padding: 3px;
+margin: 3px;
+}
+
+.paginate a {
+padding:2px 5px 2px 5px;
+margin:2px;
+border:1px solid #999;
+text-decoration:none;
+color: #666;
+}
+.paginate a:hover, .paginate a:active {
+border: 1px solid #999;
+color: #000;
+}
+.paginate span.current {
+margin: 2px;
+padding: 2px 5px 2px 5px;
+border: 1px solid #999;
+
+font-weight: bold;
+background-color: #99CC33;
+color: #FFF;
+}
+.paginate span.disabled {
+padding:2px 5px 2px 5px;
+margin:2px;
+border:1px solid #eee;
+color:#DDD;
+}
+
+li{
+padding:4px;
+margin-bottom:3px;
+background-color:#FCC;
+list-style:none;}
+
+ul{margin:6px;
+padding:0px;}
+
+</style>
+<div class="main right">
+        <table class="titlebar" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td align="left" valign="bottom"><h1>List Of Deactive User </h1></td>
+        <td class="btn"><span style="padding-right:280px;"><?=$msg?></span><span><a href="registration.php">Add</a></span></td>
+
+        </tr>
+
+        </table>
+      <table>
+        <tr><td align="left" valign="bottom">
+       <form name="FrmSeacrh" id="FrmSearch" action="search.php" method="post">
+          <input type="text" onfocus="javascript:if(this.value=='Profile id')this.value='';" onblur="javascript:if(this.value=='')this.value='Profile id';" value="Profile id" id="TxtId" class="search-txtbox left" name="TxtId"  style="margin-right:15px; font-size:12px; padding:5px;"/>
+                    <input type="text" onfocus="javascript:if(this.value=='First name')this.value='';" onblur="javascript:if(this.value=='')this.value='First name';" value="First name" id="TxtName" class="search-txtbox left" name="TxtName"  style="margin-right:15px; font-size:12px; padding:5px;" />
+                    <input type="text" onfocus="javascript:if(this.value=='Last name')this.value='';" onblur="javascript:if(this.value=='')this.value='Last name';" value="Last name" id="TxLast" class="search-txtbox left" name="TxLast"  style="margin-right:15px; font-size:12px; padding:5px;"/>
+                    <input type="text" onfocus="javascript:if(this.value=='Email')this.value='';" onblur="javascript:if(this.value=='')this.value='Email';" value="Email" id="TxtEmail" class="search-txtbox left" name="TxtEmail"  style="margin-right:15px; font-size:12px; padding:5px;" />                        
+                               
+            <input type="submit" name="TxtButton" id="TxtButton" value="Submit" src="images/btn-submit.gif" style="margin-top:7px;" />
+            
+            <select name="dropdownlist" id="dropdownlist" class="dropdown newdropd" style="margin-right:15px; font-size:12px; padding:5px;">     
+             <option value="no_data">By Qualication</option>
+             <?php 
+             foreach($qualifdata as $qual){
+             $qunewval = str_replace(" ","_",$qual);
+             	if($qual!=''){
+             		print '<option value='.$qunewval.'>'.$qual.'</option>';
+                }
+             }      
+             ?>
+      </select>
+        </form></td></tr>
+      </table>
+        
+   
+   <div align="right"><?=$paginate;?></div>    
+<div class="table-box">
+  <table width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr >
+      <td width="3%" align="center" class="table-title">#</td>
+      <td width="12%" class="table-title"> First Name </td>
+      <td width="12%" class="table-title"> Last Name </td>
+      <td width="10%" class="table-title"> Profile Id </td>
+      <!--<td width="" class="table-title"> Password </td>-->
+       <td width="12%" class="table-title"> Email</td>
+      <td width="8%" class="table-title"> Photo </td>
+      <td width="10%" class="table-title"> Date of Request</td>
+      <td width="10%" align="center" class="table-title"> Action </td>
+    </tr>
+    <?=$dataLogo;?>
+    
+  </table>
+</div>
+<div align="right"><?=$paginate;?></div>
+      </div>
+      <script language="javascript" type="text/javascript">
+function ask_ques()
+{
+	var t=confirm("Are you sure you want to delete");
+	if (t)
+		{
+			return true;
+		}
+	else
+		{
+			return false;
+		}
+}
+
+</script>

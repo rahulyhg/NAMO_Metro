@@ -1,0 +1,85 @@
+<form name="TxtFrom" id="TxtFrom" action="" method="post"  enctype="multipart/form-data">
+<div class="main right">
+        <table class="titlebar" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td align="left" valign="bottom"><h1>View Product Details</h1></td>
+        <td class="btn"><input type="button" value="Back to Previous Page" onClick="history.back()" class="active-01" name="back" id="back" ></td>
+        </tr>
+        </table>
+<div align="center" class="formarea">
+  <table width="100%" border="0" cellspacing="5" cellpadding="0">
+   <tr>
+						<td width="29%" align="right"><strong>Customer Name</strong></td>
+						<td width="71%"><?=$rowUser['cust_fullname']?></td>
+	    </tr>
+         <tr>
+						<td width="29%" align="right" style="vertical-align:top;"><strong>Customer Address</strong></td>
+						<td width="71%"><?=$rowUser['cust_billing']?><br />
+                        <?=$rowUser['cust_city']?> - <?=$rowUser['cust_pincode']?><br />
+<?=$rowUser['cust_state']?>, <?=$rowUser['cust_country']?>
+</td>
+	    </tr>
+         <tr>
+						<td width="29%" align="right"><strong>Customer Mobile</strong></td>
+						<td width="71%"><?=$rowUser['cust_mobile']?></td>
+	    </tr>
+          <tr>
+						<td width="29%" align="right"><strong>Customer Email</strong></td>
+						<td width="71%"><a href="mailto:<?=$rowUser['cust_email']?>"><?=$rowUser['cust_email']?></a></td>
+	    </tr>
+  <tr>
+						<td width="29%" align="right" colspan="2"><strong>-------------------------------------------------------------------------------------------------------------------------------------------------------------</strong></td>
+	    </tr>
+  					   <tr>
+						<td width="29%" align="right"><strong>Product Name</strong></td>
+						<td width="71%"><?=$rowData['prod_name']?></td>
+	    </tr>
+                      <tr>
+						<td width="29%" align="right"><strong>Product Code</strong></td>
+						<td width="71%"><?=$rowData['prod_code']?></td>
+	    </tr>
+                      <tr>
+						<td width="29%" align="right"><strong>Product fabric</strong></td>
+						<td width="71%"><?=$rowData['prod_fabric']?></td>
+	    </tr>
+        <tr>
+						<td width="29%" align="right"><strong>Product Color</strong></td>
+						<td width="71%"><?=$rowData['prod_color']?></td>
+	    </tr>
+        <tr>
+						<td width="29%" align="right"><strong>Product Occasion</strong></td>
+						<td width="71%"><?=$rowData['prod_occasion']?></td>
+	    </tr>
+         <tr>
+						<td width="29%" align="right"><strong>Product Style</strong></td>
+						<td width="71%"><?=$rowData['prod_style']?></td>
+	    </tr>
+         <tr>
+						<td width="29%" align="right"><strong>Product Weight</strong></td>
+						<td width="71%"><?=$rowData['prod_weight']?></td>
+	    </tr>
+                      <tr>
+						<td width="29%" align="right"><strong>Total Product Quantity</strong></td>
+						<td width="71%"><?=$rowData['prod_qty']?></td>
+	    </tr>
+        <tr>
+						<td width="29%" align="right"><strong>Total Purchased Quantity</strong></td>
+						<td width="71%"><?=$_REQUEST['qty']?></td>
+	    </tr>
+                      <tr>
+						<td width="29%" align="right"><strong>Sale Price</strong></td>
+						<td width="71%"><?=$rowData['prod_sal_price']?></td>
+	    </tr>
+                      <tr>
+						<td width="29%" align="right"><strong>Actual Price</strong></td>
+						<td width="71%"><?=$rowData['prod_act_price']?></td>
+	    </tr>
+                      <tr>
+						<td align="right" valign="top" style="vertical-align:top;"><strong>Big Image</strong></td>
+						<td><img src="../product/<?=$rowData['prod_image_big']?>" border="0"/></td>
+					  </tr>    
+  </table>
+
+</div>
+      </div>
+      </form>

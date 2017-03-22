@@ -1,0 +1,37 @@
+<div class="main right">
+        <table class="titlebar" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        <td align="left" valign="bottom"><h1>Manage Faq's</h1></td>
+        <td class="btn"><span style="padding-right:280px;"><?=$msg?></span><span><a href="insert-faq.php">Add</a></span></td>
+        </tr>
+        </table>
+<div class="table-box">
+  <table width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr >
+      <td width="6%" align="center" class="table-title">#</td>
+      <td width="54%" class="table-title"> Name </td>
+      <td width="9%" class="table-title"> Ordering </td>
+      <td width="17%" class="table-title"> Date Added </td>
+      <td width="14%" align="center" class="table-title"> Action </td>
+    </tr>
+    <?=$dataLogo;?>
+    
+  </table>
+</div>
+<div align="right"><?=$pagination;?></div>
+      </div>
+      <script language="javascript" type="text/javascript">
+function ask_ques()
+{
+	var t=confirm("Are you sure you want to delete");
+	if (t)
+		{
+			return true;
+		}
+	else
+		{
+			return false;
+		}
+}
+
+</script>
